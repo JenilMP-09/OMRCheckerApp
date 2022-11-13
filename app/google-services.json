@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "634273267411",
+    "project_id": "omrapplication-cd05c",
+    "storage_bucket": "omrapplication-cd05c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634273267411:android:d5c119b4982a027448de26",
+        "android_client_info": {
+          "package_name": "com.example.omrapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634273267411-c8jdpr5onfstmvpjct3qmul1lsh8buqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYnKwqWGixZp1aGUGoJdqLazVc_rVK2C0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634273267411-c8jdpr5onfstmvpjct3qmul1lsh8buqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

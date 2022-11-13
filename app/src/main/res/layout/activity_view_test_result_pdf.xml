@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewTestResultPDF">
+
+    <ScrollView
+        android:id="@+id/view_test_activity_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        android:layout_marginBottom="50dp"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView_view_test_details_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="View Test Details"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <TextView
+                android:id="@+id/textView_standard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_view_test_details_head"
+                android:layout_marginTop="20dp"
+                android:text="Standard"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editText_standard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_standard"
+                android:background="@drawable/border"
+                android:clickable="false"
+                android:inputType="number"
+                android:padding="6dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_division"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_standard"
+                android:layout_marginTop="10dp"
+                android:text="Division"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editText_division"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_division"
+                android:background="@drawable/border"
+                android:inputType="text"
+                android:padding="6dp"
+                android:textSize="16sp"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/textView_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_division"
+                android:layout_marginTop="10dp"
+                android:text="Subject"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editText_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_subject"
+                android:background="@drawable/border"
+                android:inputType="text"
+                android:padding="6dp"
+                android:textSize="16sp"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/textView_exam_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_subject"
+                android:layout_marginTop="10dp"
+                android:text="Exam Name"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editText_exam_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_exam_name"
+                android:background="@drawable/border"
+                android:inputType="text"
+                android:padding="6dp"
+                android:textSize="16sp"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/textView_total_students"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_exam_name"
+                android:layout_marginTop="10dp"
+                android:text="Total Students"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editText_total_students"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_total_students"
+                android:background="@drawable/border"
+                android:clickable="false"
+                android:inputType="number"
+                android:padding="6dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_total_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_total_students"
+                android:layout_marginTop="10dp"
+                android:text="Total Questions"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editText_total_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_total_questions"
+                android:background="@drawable/border"
+                android:inputType="number"
+                android:padding="6dp"
+                android:textSize="16sp"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/textView_marks_per_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_total_questions"
+                android:layout_marginTop="10dp"
+                android:text="Marks per question"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editText_marks_per_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:padding="6dp"
+                android:layout_below="@id/textView_marks_per_question"
+                android:background="@drawable/border"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/textView_negative_marks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_marks_per_question"
+                android:layout_marginTop="10dp"
+                android:text="Negative marks"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editText_negative_marks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_negative_marks"
+                android:background="@drawable/border"
+                android:inputType="number"
+                android:padding="6dp"
+                android:textSize="16sp"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/textView_number_of_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_negative_marks"
+                android:layout_marginTop="10dp"
+                android:text="Options Per Question"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/textView_number_of_options"
+                android:id="@+id/radio_group_number_of_options">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_2"
+                    android:text="2"
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:clickable="false"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_3"
+                    android:layout_marginLeft="5dp"
+                    android:text="3"
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:clickable="false"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_4"
+                    android:layout_marginLeft="5dp"
+                    android:text="4"
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:clickable="false"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_5"
+                    android:layout_marginLeft="5dp"
+                    android:text="5"
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:clickable="false"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radio_group_number_of_options"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/button_open_PDF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Open PDF" />
+
+                <Button
+                    android:id="@+id/button_open_EXCEL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Open EXCEL" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

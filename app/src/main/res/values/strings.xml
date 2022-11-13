@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OMR Checker</string>
+    <string name="menu_Open">Open</string>
+    <string name="menu_Close">Close</string>
+</resources>
